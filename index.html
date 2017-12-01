@@ -5,22 +5,32 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="title-container">
     <h1>Rod's Pixel Art Maker!</h1>
-<div class="col-sm-3 col-xs-4">
+<div class="main-container">
     <h2>Choose Grid Size</h2>
+    <div>
     <form id="sizePicker" class="form-group">
-        Grid Height:
+      <div class="row">
+        <p class="bold">Grid Height:</p>
         <input type="number" id="input_height" class="form-control" name="height" min="1" value="1">
-        Grid Width:
-        <input type="number" id="input_width" class="form-control" name="width" min="1" value="1">
-        <input type="submit" class="btn btn-primary" id="submit" value="MAKE GRID">
+      </div>
+        <div class="row mt20">
+          <p class="bold">Grid Width:</p>
+          <input type="number" id="input_width" class="form-control" name="width" min="1" value="1">
+        </div>
+        <div class="row mt20">
+            <input type="submit" class="btn btn-primary" id="submit" value="CREATE GRID">
+          </div>
     </form>
-
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
+  </div>
+  <div class="col-xs-5 col-xs-offset-1">
+      <h3>Pick A Color</h3>
+      <input type="color" id="colorPicker">
+  </div>
 </div>
 <div class="container">
   <div class="col-xs-8 col-sm-9">

@@ -1,14 +1,20 @@
 body {
-    text-align: center;
     background-image: url(pixel-bg.png);
 }
+h1, h2, h3 {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
 .main-container {
-  grid-template-columns: 10% 20% 20% 20% 20% 10%;
-  grid-template-rows: 10% 30% 30% 30%;
-  grid-column-start: 1;
+  grid-template-columns: 10% 25% 30% 25% 10%;
+  grid-template-rows: 20% 60% 20%;
+  grid-column-start: 2;
   grid-column-end: span 6;
-  grid-row-start: 1;
+  grid-row-start: 2;
   grid-row-end: span 4;
+  grid-gap: 1rem;
 }
 .controls {
   grid-column-start: 2;
@@ -62,4 +68,7 @@ td {
 
 input[type=number] {
     width: 6em;
+}
+.mt20 {
+  margin-top: 20px;
 }

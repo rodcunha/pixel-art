@@ -1,14 +1,14 @@
 body {
     background-image: url(pixel-bg.png);
 }
-h1, h2, h3 {
+h1, h2 {
   text-align: center;
 }
 .bold {
   font-weight: bold;
 }
 .main-container {
-  grid-template-columns: 10% 25% 30% 25% 10%;
+  grid-template-columns: 20% 25% 10% 25% 20%;
   grid-template-rows: 20% 60% 20%;
   grid-column-start: 2;
   grid-column-end: span 6;
@@ -29,6 +29,9 @@ h1, h2, h3 {
   display: flex;
   flex-grow: 3;
   justify-content: center;
+}
+.bgc-blue {
+  background-color: cyan;
 }
 
 h1 {

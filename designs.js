@@ -3,7 +3,10 @@
   // Start jQuery DOM Ready function
 
 
-
+$('#sizePicker').on('submit', function(event) {
+  makeGrid();
+  event.preventDefault();
+})
 // When size is submitted by the user, call makeGrid()
   const gridTable =  $('#pixel_canvas');
 
